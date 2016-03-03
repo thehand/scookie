@@ -11,7 +11,27 @@ Simply include the js script wherever you need.
 
 ## Usage
 
-TODO: Write usage instructions
+You can create anytime a cookie.
+When you pass a name during creation, if a cookie with that name already exists, that cookie will be loaded.
+If you don't pass any name, a cookie with a random name will be created.
+
+```javascript
+var myCookie = new sCookie("my_test");
+myCookie.save(3600,'This is the cookie content');
+```
+
+So you can read the cookie content whenever you want
+
+```javascript
+console.log(myCookie.content);
+console.log(myCookie.expires);
+```
+
+When you need to delete the cookie you can:
+
+```javascript
+myCookie.delete();
+```
 
 ## Contributing
 
@@ -23,31 +43,11 @@ TODO: Write usage instructions
 
 ## History
 
-TODO: Write history
-
-## Credits
-
-TODO: Write credits
+I needed a cookie management system to allow website's users to save preferences, showing buttons/links according with the content of theirs choises.
 
 ## License
 
-TODO: Write license* Some examples
-// Set new cookie without name
-var unknownCookie = new sCookie();
-console.log(unknownCookie.name);
-unknownCookie.save(60,'I don\'t know who I am');
-console.log(unknownCookie.content);
-console.log(unknownCookie.expires);
+This tool is released under the GNU GENERAL PUBLIC LICENSE (version 3).
+See the LICENSE file for details.
 
-// Set new cookie passing name
-var namedCookie = new sCookie("test");
-console.log(namedCookie.name);
-console.log(namedCookie.content);
-console.log(namedCookie.expires);
-namedCookie.save(3600,'Pippo pluto paperino');
-console.log(namedCookie.content);
-console.log(namedCookie.expires);
-namedCookie.delete();
-console.log(namedCookie.content);
-console.log(namedCookie.expires);
-*/
+
