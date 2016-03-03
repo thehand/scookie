@@ -9,28 +9,24 @@ var sCookie;
 
 sCookie = function (cookieName) {
   this.name = window.location.hostname + '_sCookie_' + new Date().getTime();
-
-  if (cookieName && cookieName.length > 0) {
+  if (cookieName && cookieName.length > 0)
     this.name = cookieName;
-    this.content = '';
-    this.expires = -1;
-  }
+  
+  this.content = '';
+  this.expires = -1;
 };
 
 sCookie.prototype.save = function (cookieTtl,cookieContent) {
-  if (!cookieTtl || cookieTtl !== parseInt(cookieTtl, 10)) {
+  if (!cookieTtl || cookieTtl !== parseInt(cookieTtl, 10))
     cookieTtl = 3600;
-  }
+  
+  if (cookieContent && cookieContent.length > 0)
+    this.content = cookieContent;
+
   var expire = new Date();
   var now = new Date();
   expire.setTime(now.getTime() + (parseInt(cookieTtl) * 60000));
-  this.expires = expire.toGMTString()
-
-  if (cookieContent && cookieContent.length > 0) {
-    this.content = cookieContent;
-  } else {
-    this.content = '';
-  }
+  this.expires = expire.toGMTString();
 
   document.cookie = this.name + '=' + escape(this.content) + '; expires=' + this.expires + '; path=/';
 };
