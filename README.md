@@ -6,7 +6,7 @@ A simple and lightweight tool to manage (creation, reading, writing, deleting) c
 
 Simply include the js script wherever you need.
 ```html
-<script src="/path/to/scookie/sCookie.js" type="text/javascript"></script>
+<script src="/path/to/scookie/build/scookie.min.js" type="text/javascript"></script>
 ```
 
 ## Usage
