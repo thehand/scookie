@@ -1,0 +1,28 @@
+{
+  "name": "scookie",
+  "version": "1.0.0",
+  "description": "A simple and lightweight tool to manage cookies in JavaScript",
+  "main": "scookie.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thehand/scookie.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "cookies"
+  ],
+  "author": "Francesco Salamone",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/thehand/scookie/issues"
+  },
+  "homepage": "https://github.com/thehand/scookie#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^0.11.1"
+  }
+}
