@@ -14,7 +14,7 @@
     "JavaScript",
     "cookies"
   ],
-  "author": "Francesco Salamone",
+  "author": "Francesco Salamone <salamone.francesco@gmail.com>",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/thehand/scookie/issues"
@@ -22,7 +22,6 @@
   "homepage": "https://github.com/thehand/scookie#readme",
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-uglify": "^0.11.1"
   }
 }
